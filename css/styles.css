@@ -1,0 +1,280 @@
+:root {
+  --brand-blue-color: #2196f3;
+  --black: #000000;
+  --common-color: #212121;
+  --grey: #757575;
+  --white: #ffffff;
+  --background-black: #2f303a;
+  --background-grey: #f5f4fa;
+  --card-border-grey: #eeeeee;
+  --header-underline: #ececec;
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+  --footer-logo-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --project-cards-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --project-button-shedow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ------Hide Headers------ */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ------End Hide Headers------ */
+
+body {
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--common-color);
+  background-color: var(--white);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ------Header Section------ */
+/* Logo Headder-Fotter */
+
+.logo {
+  color: var(--brand-blue-color);
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.logo-rightpart-header {
+  color: var(--black);
+}
+
+.logo-rightpart-footer {
+  color: var(--white);
+}
+
+.logo.link:hover,
+.logo.link:focus {
+  opacity: 0.7;
+}
+
+.logo.shadow {
+  text-shadow: var(--footer-logo-shadow);
+}
+
+/* Main Menu And Header Contacts Font */
+
+.main-menu .link,
+.header-contacts .link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+/* Main Menu */
+
+.main-menu .link {
+  color: var(--common-color);
+}
+
+.main-menu .link.current {
+  color: var(--brand-blue-color);
+}
+
+.main-menu .link:hover,
+.main-menu .link:focus {
+  color: var(--brand-blue-color);
+}
+
+/* Header Contacts */
+
+.header-contacts .link {
+  color: var(--grey);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--brand-blue-color);
+}
+/* ------End Header Section------ */
+
+/* -----Main Container------ */
+/* Hero */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hero-background {
+  background-color: var(--background-black);
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.feature-description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+
+/* Sections */
+
+/* Team Section */
+
+.team-section {
+  background-color: var(--background-grey);
+}
+
+/* Sections h2 */
+
+.section > .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Sections h3 */
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
+
+.portfolio-link.link {
+  color: inherit;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Card Descriptions */
+
+.card-description {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+
+.team-position {
+  line-height: 1.188;
+  text-align: center;
+}
+
+.project-type {
+  line-height: 1.875;
+}
+
+/* Portfolio Card Effects */
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: var(--project-cards-shadow);
+}
+
+/* Buttons */
+
+.button {
+  font-size: 16px;
+  text-align: center;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button.hero-batton {
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--brand-blue-color);
+  box-shadow: var(--hero-button-shadow);
+}
+
+.button.hero-batton:hover,
+.button.hero-batton:focus {
+  background-color: var(--white);
+  color: var(--common-color);
+}
+
+.button.project-sorting {
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--common-color);
+  background-color: var(--background-grey);
+}
+
+.button.project-sorting:hover,
+.button.project-sorting:focus {
+  color: var(--white);
+  background-color: var(--brand-blue-color);
+  box-shadow: var(--project-button-shedow);
+}
+
+/* -----End Main Container------ */
+
+/* ------Footer Section------ */
+.footer-section {
+  background-color: var(--background-black);
+}
+
+.addres-block,
+.addres-block .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.addres-block {
+  color: var(--white);
+}
+
+.addres-block .link {
+  font-family: inherit;
+  color: var(--footer-contacts);
+}
+
+.addres-block .link:hover,
+.addres-block .link:focus {
+  color: var(--white);
+}
